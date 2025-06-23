@@ -70,14 +70,18 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Card 1 - Lahan Organik -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-        <img src="/images/fasilitas/pertanian/lahan.jpg" alt="Lahan Pertanian Organik" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">Lahan Pertanian Organik</h3>
-          <p class="text-gray-600">Pengembangan lahan pertanian bebas bahan kimia dengan sistem organik.</p>
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="bg-gray-100 h-48 flex items-center justify-center">
+            <svg class="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Kolam Budidaya</h3>
+            <p class="text-gray-600">Fasilitas kolam untuk budidaya berbagai jenis ikan air tawar.</p>
+          </div>
         </div>
-      </div>
 
         <!-- Card 2 -->
         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">

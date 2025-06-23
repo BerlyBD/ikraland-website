@@ -68,44 +68,36 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-          <div class="bg-gray-100 h-48 flex items-center justify-center">
-            <svg class="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-            </svg>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Lahan Pertanian Organik</h3>
-            <p class="text-gray-600">Pengembangan lahan pertanian bebas bahan kimia dengan sistem organik terpadu.</p>
-          </div>
+
+      <!-- Card 1 - Lahan Organik -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+        <img src="/images/fasilitas/pertanian/lahan.jpg" alt="Lahan Pertanian Organik" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Lahan Pertanian Organik</h3>
+          <p class="text-gray-600">Pengembangan lahan pertanian bebas bahan kimia dengan sistem organik.</p>
         </div>
+      </div>
+
 
         <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-          <div class="bg-gray-100 h-48 flex items-center justify-center">
-            <svg class="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-            </svg>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Pembibitan Modern</h3>
-            <p class="text-gray-600">Fasilitas pembibitan tanaman dengan teknologi terkini untuk hasil optimal.</p>
-          </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+        <img src="/images/fasilitas/pertanian/bibit.jpg" alt="Lahan Pertanian Organik" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Pembibitan Modern</h3>
+          <p class="text-gray-600">Fasilitas pembibitan tanaman dengan teknologi terkini untuk hasil optimal.</p>
         </div>
+      </div>
+
 
         <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-          <div class="bg-gray-100 h-48 flex items-center justify-center">
-            <svg class="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Pelatihan Pertanian</h3>
-            <p class="text-gray-600">Program edukasi dan pelatihan teknik pertanian berkelanjutan bagi petani.</p>
-          </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+        <img src="/images/fasilitas/pertanian/pelatihan.jpg" alt="Lahan Pertanian Organik" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Pelatihan Pertanian</h3>
+          <p class="text-gray-600">Program edukasi dan pelatihan teknik pertanian berkelanjutan bagi petani.</p>
         </div>
+      </div>
+
       </div>
     </div>
   </section>
