@@ -17,3 +17,10 @@ Route::get('/pertanian', function () {
 Route::get('/perikanan', function () {
     return view('perikanan');
 });
+Route::get('/programedukasi', function () {
+    return view('programedukasi');
+});
+
+Route::get('/programrekreasi', function () {
+    return view('programrekreasi');
+});
