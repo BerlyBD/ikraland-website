@@ -68,6 +68,16 @@
           </div>
         </div>
 
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-lg">
+          <div class="h-64 overflow-hidden">
+            <img src="{{ asset('images/fasilitas/saung.jpg') }}" alt="Rumah Belajar" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">SAUNG LEGENDARIS</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum obcaecati deleniti aperiam, nulla esse optio eos unde repudiandae quos, eum ea! Explicabo nulla a voluptatem ut impedit assumenda enim?</p>
+          </div>
+        </div>
+
         <!-- Card 4 -->
         <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-lg">
           <div class="h-64 overflow-hidden">
