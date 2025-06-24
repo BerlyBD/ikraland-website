@@ -36,17 +36,9 @@
         </div>
         
         <div class="relative group">
-          <a href="#" class="font-medium flex items-center gap-1 py-2">
+          <a href="{{ url('/project') }}" class="font-medium flex items-center gap-1 py-2">
             Project
-            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
           </a>
-          <div class="absolute hidden group-hover:block mt-0 bg-gray-800 text-white rounded-b shadow-lg py-2 min-w-[200px]">
-            <a href="#" class="block px-4 py-2 hover:bg-gray-700 transition-colors">Project Lingkungan</a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-700 transition-colors">Project Kolaborasi</a>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-700 transition-colors">Project Sosial</a>
-          </div>
         </div>
         
         <div class="relative group">

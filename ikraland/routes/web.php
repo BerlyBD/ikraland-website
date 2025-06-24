@@ -24,3 +24,7 @@ Route::get('/programedukasi', function () {
 Route::get('/programrekreasi', function () {
     return view('programrekreasi');
 });
+
+Route::get('/project', function () {
+    return view('project');
+});
