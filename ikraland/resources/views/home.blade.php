@@ -54,7 +54,7 @@
           </div>
         </div>
         
-        <a href="#" class="font-medium py-2 hover:text-green-600 transition-colors">Kontak</a>
+        <a href="{{ url('/kontak') }}"class="font-medium py-2 hover:text-green-600 transition-colors">Kontak</a>
       </nav>
     </div>
   </header>

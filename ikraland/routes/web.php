@@ -28,3 +28,7 @@ Route::get('/programrekreasi', function () {
 Route::get('/project', function () {
     return view('project');
 });
+
+Route::get('/kontak', function () {
+    return view('kontak');
+});
