@@ -1,8 +1,7 @@
-# Gunakan PHP image dengan Composer & Extensions Laravel
+# Gunakan PHP CLI agar artisan serve bisa digunakan
 FROM php:8.2-cli
 
-
-# Install system dependencies
+# Install dependencies sistem
 RUN apt-get update && apt-get install -y \
     git \
     unzip \
@@ -14,26 +13,23 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
-# Install Composer
+# Install Composer (dari image composer resmi)
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
 WORKDIR /var/www
 
-# Copy project
+# Copy semua file ke dalam container
 COPY . .
 
-# Install dependencies
+# Install dependency Laravel
 RUN composer install
 
-# Generate Laravel key
-RUN php artisan key:generate
-
-# Set permissions
+# Set permission folder storage
 RUN chmod -R 755 /var/www/storage
 
-# Expose port (Railway butuh ini)
+# Expose port agar Laravel bisa diakses
 EXPOSE 8000
 
-# Start server
+# Jalankan Laravel development server
 CMD php artisan serve --host=0.0.0.0 --port=8000
