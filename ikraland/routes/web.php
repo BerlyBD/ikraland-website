@@ -32,3 +32,8 @@ Route::get('/project', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 });
+
+Route::get('/programkesehatan', function () {
+    return view('programkesehatan');
+});
+

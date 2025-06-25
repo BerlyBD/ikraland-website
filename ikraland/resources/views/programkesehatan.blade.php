@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak - IKRALAND</title>
+  <title>Program Edukasi - IKRALAND</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preload" href="{{ asset('images/logo.png') }}" as="image">
+  <style>
+    .program-card:hover .program-image {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
- <!-- Navbar Sticky -->
+  <!-- Navbar Sticky -->
   <header class="sticky top-0 z-50 bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <a href="{{ url('/') }}" class="flex items-center gap-2 group">
@@ -51,6 +55,7 @@
           <div class="absolute hidden group-hover:block mt-0 bg-gray-800 text-white rounded-b shadow-lg py-2 min-w-[200px]">
             <a href="{{ url('/programedukasi') }}" class="block px-4 py-2 hover:bg-gray-700 transition-colors">Program Edukasi</a>
             <a href="{{ url('/programrekreasi') }}" class="block px-4 py-2 hover:bg-gray-700 transition-colors">Program Rekreasi</a>
+            <a href="{{ url('/programkesehatan') }}" class="block px-4 py-2 hover:bg-gray-700 transition-colors">Program Kesehatan</a>
           </div>
         </div>
         
@@ -63,46 +68,65 @@
     <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <a href="{{ url('/') }}" class="block px-3 py-2 text-base font-medium rounded-md hover:text-green-600">Beranda</a>
-        <a href="{{ url('/kontak') }}" class="block px-3 py-2 text-base font-medium rounded-md text-green-600 font-bold">Kontak</a>
+        <a href="{{ url('/programedukasi') }}" class="block px-3 py-2 text-base font-medium rounded-md text-green-600 font-bold">Program Edukasi</a>
+        <a href="{{ url('/kontak') }}" class="block px-3 py-2 text-base font-medium rounded-md hover:text-green-600">Kontak</a>
       </div>
     </div>
   </header>
 
-  <!-- Contact Section -->
+  <!-- Program Section -->
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
-        <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
-        <p class="text-gray-600 max-w-2xl mx-auto">Silakan hubungi kami melalui media sosial atau formulir kontak</p>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Pilihan Program Kami</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Temukan program yang sesuai dengan kebutuhan edukasi Anda</p>
       </div>
 
-      <!-- Social Media Links -->
-      <div class="flex justify-center gap-6 mb-12">
-        <!-- YouTube -->
-        <a href="https://www.youtube.com/@ikradokterunpad" target="_blank" class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg">
-          <i class="fab fa-youtube text-xl"></i>
-        </a>
-        
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/ikraland.nec/" target="_blank" class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg">
-          <i class="fab fa-instagram text-xl"></i>
-        </a>
-        
-        <!-- WhatsApp -->
-        <a href="https://wa.me/6283103242552" target="_blank" class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg">
-          <i class="fab fa-whatsapp text-xl"></i>
-        </a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Program 1 -->
+        <div class="program-card bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
+          <div class="relative h-64 overflow-hidden">
+            <img src="{{ asset('images/program/jelajah-tanaman.jpg') }}" alt="Jelajah Tanaman" class="program-image w-full h-full object-cover transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+              <h3 class="text-2xl font-bold text-white">Jelajah Tanaman</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="program-card bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
+          <div class="relative h-64 overflow-hidden">
+            <img src="{{ asset('images/program/petani-cilik.jpg') }}" alt="Petani Cilik" class="program-image w-full h-full object-cover transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+              <h3 class="text-2xl font-bold text-white">Petani Cilik</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600">Program khusus untuk anak usia 5-12 tahun belajar bercocok tanam dengan metode yang menyenangkan dan edukatif.</p>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="program-card bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
+          <div class="relative h-64 overflow-hidden">
+            <img src="{{ asset('images/program/agro-edu.jpg') }}" alt="Agro Edu Tour" class="program-image w-full h-full object-cover transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+              <h3 class="text-2xl font-bold text-white">Agro Edu Tour</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600">Paket wisata edukasi untuk keluarga dengan pengalaman langsung memanen dan mengolah hasil pertanian.</p>
+          </div>
+        </div>
       </div>
-
-      <!-- Contact Button -->
-      <div class="text-center">
-        <a href="#" class="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl">
-          Hubungi Kami
-        </a>
-      </div>
-
-
+    </div>
+  </section>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
