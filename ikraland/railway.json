@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "APP_ENV": "production",
+      "APP_DEBUG": "false",
+      "PORT": "8000"
+    }
+  }
+}
